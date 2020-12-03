@@ -1,0 +1,11 @@
+.Progress-Bar__outer {
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.Progress-Bar__outer div {
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}

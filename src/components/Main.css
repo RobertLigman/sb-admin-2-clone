@@ -1,0 +1,11 @@
+.main {
+    min-height: 100vh;
+    /* background-color: rgb(236, 236, 236); */
+    padding: 20px 25px;
+}
+
+.main-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #5a5c69;
+}
