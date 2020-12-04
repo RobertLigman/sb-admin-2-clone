@@ -5,6 +5,7 @@ import "./App.css";
 import MainHeader from "./components/MainHeader";
 import SideNav from "./components/SideNav";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 function App() {
   const [sideNav, setSideNav] = useState(false);
   const toggleNav = () => {
@@ -20,6 +21,7 @@ function App() {
       <MainHeader click={toggleNav} />
       {sideNav && <SideNav click={closeNav} />}
       <Main />
+      <Footer />
       <Route path="/" exact></Route>
     </Router>
   );

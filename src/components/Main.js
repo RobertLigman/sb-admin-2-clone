@@ -3,8 +3,12 @@ import {
   faCalendar,
   faComments,
   faDollarSign,
+  faArrowRight,
   faTasks,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./Main.css";
 import Tile from "./Tile";
 import {
@@ -20,6 +24,7 @@ import {
 import { PieChart, Pie, Sector } from "recharts";
 import Projects from "./Projects";
 import ColorTile from "./ColorTile";
+import Card from "./Card";
 
 const data1 = [
   { name: "Group A", value: 400 },
@@ -97,7 +102,20 @@ const data = [
     amt: 2100,
   },
 ];
-
+const developmentAproach = {
+  title: "Development Aproach",
+  text:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates",
+};
+const Illustrations = {
+  title: "Illustrations",
+  text:
+    "Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+  image: {
+    src: "/dupa",
+    alt: "cycki",
+  },
+};
 const Main = () => {
   return (
     <main className="main">
@@ -173,6 +191,15 @@ const Main = () => {
       <ColorTile color="#858796" title="Secondary" text="#858796" />
       <ColorTile color="#f8f9fc" title="Light" text="#f8f9fc" theme="dark" />
       <ColorTile color="#5a5c69" title="Dark" text="#5a5c69" />
+      <Card
+        title={Illustrations.title}
+        text={Illustrations.text}
+        image={{ src: Illustrations.image.src, alt: Illustrations.image.alt }}>
+        <Link to="/unDraw">
+          Browse Illustations on unDraw <FontAwesomeIcon icon={faArrowRight} />
+        </Link>
+      </Card>
+      <Card title={developmentAproach.title} text={developmentAproach.text} />
     </main>
   );
 };

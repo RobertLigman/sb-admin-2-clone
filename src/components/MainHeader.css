@@ -78,6 +78,8 @@ li {
 .account {
     cursor: pointer;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .account p {
@@ -107,7 +109,8 @@ li {
 }
 
 .avatar-image {
-    margin: auto;
+    /* margin: auto; */
+    margin: auto 5px;
     display: inline-block;
     width: 30px;
     height: 30px;
