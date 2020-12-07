@@ -21,7 +21,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import { PieChart, Pie, Sector } from "recharts";
+import { PieChart, Pie } from "recharts";
 import Projects from "./Projects";
 import ColorTile from "./ColorTile";
 import Card from "./Card";
@@ -33,31 +33,31 @@ const data1 = [
   { name: "Group D", value: 200 },
 ];
 
-const renderActiveShape = (props) => {
-  const RADIAN = Math.PI / 180;
-  const {
-    cx,
-    cy,
-    midAngle,
-    innerRadius,
-    outerRadius,
-    startAngle,
-    endAngle,
-    fill,
-    payload,
-    percent,
-    value,
-  } = props;
-  const sin = Math.sin(-RADIAN * midAngle);
-  const cos = Math.cos(-RADIAN * midAngle);
-  const sx = cx + (outerRadius + 10) * cos;
-  const sy = cy + (outerRadius + 10) * sin;
-  const mx = cx + (outerRadius + 30) * cos;
-  const my = cy + (outerRadius + 30) * sin;
-  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
-  const ey = my;
-  const textAnchor = cos >= 0 ? "start" : "end";
-};
+// const renderActiveShape = (props) => {
+//   const RADIAN = Math.PI / 180;
+//   const {
+//     cx,
+//     cy,
+//     midAngle,
+//     innerRadius,
+//     outerRadius,
+//     startAngle,
+//     endAngle,
+//     fill,
+//     payload,
+//     percent,
+//     value,
+//   } = props;
+//   const sin = Math.sin(-RADIAN * midAngle);
+//   const cos = Math.cos(-RADIAN * midAngle);
+//   const sx = cx + (outerRadius + 10) * cos;
+//   const sy = cy + (outerRadius + 10) * sin;
+//   const mx = cx + (outerRadius + 30) * cos;
+//   const my = cy + (outerRadius + 30) * sin;
+//   const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+//   const ey = my;
+//   const textAnchor = cos >= 0 ? "start" : "end";
+// };
 const data = [
   {
     name: "Page A",
@@ -116,9 +116,10 @@ const Illustrations = {
     alt: "cycki",
   },
 };
-const Main = () => {
+
+const Main = (props) => {
   return (
-    <main className="main">
+    <main className="main" style={{ marginLeft: props.setMarginLeft }}>
       <h1 className="main-title">{"Dashboard"}</h1>
 
       <Tile icon={faCalendar} title={"earnings (monthly)"} value={"$40,000"} />

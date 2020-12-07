@@ -7,4 +7,6 @@ footer {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 5px #ddd;
+    /* grid-column: 2/3;
+    grid-row: 3/4; */
 }

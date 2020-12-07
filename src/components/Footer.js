@@ -1,4 +1,8 @@
 import React from "react";
 import "./Footer.css";
-const Footer = () => <footer>Copyright &copy; Your Website 2020</footer>;
+const Footer = (props) => (
+  <footer style={{ marginLeft: props.setMarginLeft }}>
+    Copyright &copy; Your Website 2020
+  </footer>
+);
 export default Footer;

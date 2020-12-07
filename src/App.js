@@ -6,22 +6,26 @@ import MainHeader from "./components/MainHeader";
 import SideNav from "./components/SideNav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import "./GlobalSet.css";
 function App() {
   const [sideNav, setSideNav] = useState(false);
   const toggleNav = () => {
-    console.log(sideNav);
+    // console.log(sideNav);
     setSideNav(!sideNav);
   };
   const closeNav = () => {
-    console.log("click");
+    // console.log("click");
     setSideNav(false);
   };
   return (
     <Router>
-      <MainHeader click={toggleNav} />
+      <MainHeader
+        click={toggleNav}
+        setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null}
+      />
       {sideNav && <SideNav click={closeNav} />}
-      <Main />
-      <Footer />
+      <Main setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null} />
+      <Footer setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null} />
       <Route path="/" exact></Route>
     </Router>
   );

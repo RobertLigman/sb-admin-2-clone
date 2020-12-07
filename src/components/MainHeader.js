@@ -30,8 +30,8 @@ const MainHeader = (props) => {
 
   return (
     <header>
-      <ul className="header-list">
-        <li className="header-list-item hamburger-item">
+      <ul className="header-list" style={{ marginLeft: props.setMarginLeft }}>
+        <li className="header-list-item hamburger-item primary">
           <div
             className="hamburger-icon"
             onClick={props.click}

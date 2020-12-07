@@ -5,7 +5,7 @@ import "./ProjectItem.css";
 
 const ProjectItem = (props) => (
   <li>
-    <Link>
+    <Link to="">
       <div className="single-project">
         <h3 className="project-title">{props.title}</h3>
         <p className="progress-complete">
