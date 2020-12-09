@@ -10,7 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./Main.css";
+import Illustrations from "./Illustrations";
 import Tile from "./Tile";
+import image from "../assets/SVG/undraw_posting_photo.svg";
 import {
   ResponsiveContainer,
   LineChart,
@@ -25,6 +27,7 @@ import { PieChart, Pie } from "recharts";
 import Projects from "./Projects";
 import ColorTile from "./ColorTile";
 import Card from "./Card";
+import Summary from "./Summary";
 
 const data1 = [
   { name: "Group A", value: 400 },
@@ -105,14 +108,14 @@ const data = [
 const developmentAproach = {
   title: "Development Aproach",
   text:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates",
+    "Lorem Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit.ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates",
 };
-const Illustrations = {
+const Illustration = {
   title: "Illustrations",
   text:
-    "Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    "Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   image: {
-    src: "/dupa",
+    src: image,
     alt: "cycki",
   },
 };
@@ -120,87 +123,109 @@ const Illustrations = {
 const Main = (props) => {
   return (
     <main className="main" style={{ marginLeft: props.setMarginLeft }}>
-      <h1 className="main-title">{"Dashboard"}</h1>
+      <div className="main-dashboard">
+        <h1 className="main-title">{"Dashboard"}</h1>
 
-      <Tile icon={faCalendar} title={"earnings (monthly)"} value={"$40,000"} />
-      <Tile
-        border={"green-border"}
-        color={"green"}
-        icon={faDollarSign}
-        title={"earnings (annual)"}
-        value={"$215,000"}
-      />
-      <Tile
-        border={"cyan-border"}
-        color={"cyan"}
-        icon={faTasks}
-        title={"tasks"}
-        value={"50%"}
-        progressBar
-      />
-      <Tile
-        border={"gold-border"}
-        color={"gold"}
-        icon={faComments}
-        title={"pending requests"}
-        value={"18"}
-      />
-      <ResponsiveContainer width="90%" height={400}>
-        <LineChart
-          // width="80%"
-          // height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#8884d8"
-            activeDot={{ r: 8 }}
-          />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-        </LineChart>
-      </ResponsiveContainer>
-      <ResponsiveContainer width="90%" height={400}>
-        <PieChart>
-          <Pie
-            data={data1}
-            cx="50%"
-            cy={200}
-            innerRadius={60}
-            outerRadius={80}
-            fill="#8884d8"
-            dataKey="value"
-          />
-        </PieChart>
-      </ResponsiveContainer>
-      <Projects />
-      <ColorTile color="#4e73df" title="Primary" text="#4d73df" />
-      <ColorTile color="#1cc88a" title="Success" text="#1cc88a" />
-      <ColorTile color="#36b9cc" title="Info" text="#36b9cc" />
-      <ColorTile color="#f6c23e" title="Warning" text="#f6c23e" />
-      <ColorTile color="#e74a3b" title="Danger" text="#e74a3b" />
-      <ColorTile color="#858796" title="Secondary" text="#858796" />
-      <ColorTile color="#f8f9fc" title="Light" text="#f8f9fc" theme="dark" />
-      <ColorTile color="#5a5c69" title="Dark" text="#5a5c69" />
-      <Card
-        title={Illustrations.title}
-        text={Illustrations.text}
-        image={{ src: Illustrations.image.src, alt: Illustrations.image.alt }}>
-        <Link to="/unDraw">
-          Browse Illustations on unDraw <FontAwesomeIcon icon={faArrowRight} />
-        </Link>
+        <Tile
+          icon={faCalendar}
+          title={"earnings (monthly)"}
+          value={"$40,000"}
+        />
+        <Tile
+          border={"green-border"}
+          color={"green"}
+          icon={faDollarSign}
+          title={"earnings (annual)"}
+          value={"$215,000"}
+        />
+        <Tile
+          border={"cyan-border"}
+          color={"cyan"}
+          icon={faTasks}
+          title={"tasks"}
+          value={"50%"}
+          progressBar
+        />
+        <Tile
+          border={"gold-border"}
+          color={"gold"}
+          icon={faComments}
+          title={"pending requests"}
+          value={"18"}
+        />
+      </div>
+
+      <Card title="Earing Overview" dots="true" classes="col-8">
+        <ResponsiveContainer width="90%" height={400}>
+          <LineChart
+            // width="80%"
+            // height={300}
+            data={data}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Line
+              type="monotone"
+              dataKey="pv"
+              stroke="#8884d8"
+              activeDot={{ r: 8 }}
+            />
+            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          </LineChart>
+        </ResponsiveContainer>
       </Card>
-      <Card title={developmentAproach.title} text={developmentAproach.text} />
+      <Card title="Revenue Sources" dots="true" classes="col-4">
+        <ResponsiveContainer width="90%" height={400}>
+          <PieChart>
+            <Pie
+              data={data1}
+              cx="50%"
+              cy={200}
+              innerRadius={60}
+              outerRadius={80}
+              fill="#8884d8"
+              dataKey="value"
+            />
+          </PieChart>
+        </ResponsiveContainer>
+      </Card>
+      <div className="left-sided">
+        <Projects />
+        <div className="colors">
+          <ColorTile color="#4e73df" title="Primary" text="#4d73df" />
+          <ColorTile color="#1cc88a" title="Success" text="#1cc88a" />
+          <ColorTile color="#36b9cc" title="Info" text="#36b9cc" />
+          <ColorTile color="#f6c23e" title="Warning" text="#f6c23e" />
+          <ColorTile color="#e74a3b" title="Danger" text="#e74a3b" />
+          <ColorTile color="#858796" title="Secondary" text="#858796" />
+          <ColorTile
+            color="#f8f9fc"
+            title="Light"
+            text="#f8f9fc"
+            theme="dark"
+          />
+          <ColorTile color="#5a5c69" title="Dark" text="#5a5c69" />
+        </div>
+      </div>
+      <div className="right-sided">
+        <Illustrations
+          title={Illustration.title}
+          image={{ src: Illustration.image.src, alt: Illustration.image.alt }}
+          text={Illustration.text}
+        />
+        <Summary
+          title={developmentAproach.title}
+          text={developmentAproach.text}
+        />
+      </div>
     </main>
   );
 };

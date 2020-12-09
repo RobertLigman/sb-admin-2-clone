@@ -70,3 +70,11 @@
     height: 100%;
     border-radius: inherit inherit 0 0;
 }
+
+@media (min-width: 768px) {
+    .main__tile:first-child {
+        /* box-sizing: border-box; */
+        /* max-width: 22%; */
+        /* margin: 25px 15px; */
+    }
+}

@@ -4,7 +4,7 @@
     left: 0;
     bottom: 0;
     min-height: 100vh;
-    width: var(--side-nav-mobile-open);
+    width: var(--side-nav-width);
     background-color: #4d73df;
 }
 
@@ -46,7 +46,7 @@
 @media (min-width: 576px) {
     .side-nav {
         /* display: none !important; */
-        width: var(--side-bar-width);
+        width: var(--side-nav-width);
         background-color: #4e73df;
         min-height: 100vh;
         position: absolute;

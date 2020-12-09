@@ -11,3 +11,33 @@
     font-weight: 400;
     color: #5a5c69;
 }
+
+@media (min-width: 768px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 20px;
+        justify-content: center;
+        column-gap: 25px;
+    }
+    .main-dashboard {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 25px;
+    }
+    .main-title {
+        grid-column: 1/-1;
+    }
+    .left-sided {
+        grid-column: 1/4;
+    }
+    .colors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+    .right-sided {
+        grid-column: 4/-1;
+    }
+}

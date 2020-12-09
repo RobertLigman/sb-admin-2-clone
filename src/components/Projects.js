@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
+import Card from "./Card";
 // import { Link } from "react-router-dom";
 // import ProgressBar from "./ProgressBar";
 import "./Projects.css";
@@ -26,9 +27,8 @@ const projectInfo = {
   },
 };
 const projects = () => (
-  <div className="projects">
-    <h2>Projects</h2>
-    <ul>
+  <Card title="Projects" classes="project">
+    <ul className="projects_list">
       <ProjectItem
         title={Object.keys(projectInfo)[0]}
         width={projectInfo.serverMigration.width}
@@ -55,6 +55,6 @@ const projects = () => (
         color={projectInfo.AccountSetup.color}
       />
     </ul>
-  </div>
+  </Card>
 );
 export default projects;

@@ -21,11 +21,11 @@ function App() {
     <Router>
       <MainHeader
         click={toggleNav}
-        setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null}
+        setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
       />
       {sideNav && <SideNav click={closeNav} />}
-      <Main setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null} />
-      <Footer setMarginLeft={sideNav ? "var(--side-nav-mobile-open)" : null} />
+      <Main setMarginLeft={sideNav ? "var(--side-nav-width)" : null} />
+      <Footer setMarginLeft={sideNav ? "var(--side-nav-width)" : null} />
       <Route path="/" exact></Route>
     </Router>
   );

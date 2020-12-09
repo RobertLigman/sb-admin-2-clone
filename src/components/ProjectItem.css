@@ -1,4 +1,20 @@
+.project-item {
+    padding: 10px 20px;
+}
+
 .single-project {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.project-item__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.project-title {
+    font-weight: 700;
 }

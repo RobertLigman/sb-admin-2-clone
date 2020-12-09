@@ -1,0 +1,9 @@
+.Backdrop {
+    position: absolute;
+    width: 100vw;
+    height: calc(100% - var(--header-height));
+    top: var(--header-height);
+    left: 0;
+    background-color: green;
+    z-index: 1;
+}
