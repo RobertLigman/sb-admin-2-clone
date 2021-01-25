@@ -1,11 +1,13 @@
 .side-nav {
     position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    /* bottom: 0; */
     min-height: 100vh;
     width: var(--side-nav-width);
     background-color: #4d73df;
+    z-index: 100;
 }
 
 .logo-text {

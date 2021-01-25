@@ -7,6 +7,7 @@ import SideNav from "./components/SideNav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "./GlobalSet.css";
+
 function App() {
   const [sideNav, setSideNav] = useState(false);
   const toggleNav = () => {

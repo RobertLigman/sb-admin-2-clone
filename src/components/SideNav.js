@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SideNav = (props) => {
   return (
-    <nav className="side-nav" onClick={props.click}>
+    <nav className="side-nav">
       <ul className="side-nav__list">
         <li>
           <Link to="/index.html" className="active">
@@ -74,7 +74,9 @@ const SideNav = (props) => {
             Tables
           </Link>
         </li>
-        <div className="arrow-control upper-line">arrow</div>
+        <div className="arrow-control upper-line" onClick={props.click}>
+          arrow
+        </div>
       </ul>
     </nav>
   );
