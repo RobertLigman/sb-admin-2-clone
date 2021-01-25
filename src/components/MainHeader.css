@@ -141,6 +141,8 @@ header {
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 2;
+    overflow: hidden;
     /* transform: scale(0.1); */
     transition: all 0.2s ease-in;
     background-color: #fff;
@@ -177,6 +179,11 @@ header {
 .alert-list__item {
     border: 1px solid #ddd;
     border-top: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.alert-list__item:hover {
+    background-color: var(--primary);
 }
 
 .item__all-posts {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SideNav.css";
 import {
@@ -16,6 +16,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SideNav = (props) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [expandedItems, setExpandedItems] = useState(null);
+  const toggleExpanded = (e) => {
+    if (expandedItems === null || expandedItems === e.target.textContent) {
+      setIsExpanded((prevState) => !prevState);
+    } else if (expandedItems !== e.target.textContent) {
+      setIsExpanded(true);
+    }
+    setExpandedItems(e.target.textContent);
+    // console.log(e.target.textContent);
+  };
   return (
     <nav className="side-nav">
       <ul className="side-nav__list">
@@ -41,24 +52,71 @@ const SideNav = (props) => {
         </li>
         <div className="nav-items__header upper-line">interface</div>
         <li>
-          <Link to="/Components">
+          <Link onClick={(e) => toggleExpanded(e)} to="Components">
             <FontAwesomeIcon icon={faCog} className="side-nav__icon" />
             Components
           </Link>
+          {isExpanded && expandedItems === "Components" && (
+            <ul>
+              <h4>custom components:</h4>
+              <li>
+                <Link to="/buttons">Buttons</Link>
+              </li>
+              <li>
+                <Link to="/Cards">Cards</Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
-          <Link to="/Utilities">
+          <Link to="/Utilities" onClick={(e) => toggleExpanded(e)}>
             <FontAwesomeIcon icon={faWrench} className="side-nav__icon" />
             Utilities
           </Link>
+          {isExpanded && expandedItems === "Utilities" && (
+            <ul>
+              <h4>custom utilities:</h4>
+              <li>
+                <Link to="/colors">Colors</Link>
+              </li>
+              <li>
+                <Link to="/borders">Borders</Link>
+              </li>
+              <li>
+                <Link to="/animations">Animations</Link>
+              </li>
+              <li>
+                <Link to="/Other">Other</Link>
+              </li>
+            </ul>
+          )}
         </li>
         <div className="nav-items__header upper-line">Addons</div>
         <li>
-          <Link to="/Pages">
-            {" "}
+          <Link to="/Pages" onClick={(e) => toggleExpanded(e)}>
             <FontAwesomeIcon icon={faFolder} className="side-nav__icon" />
             Pages
           </Link>
+          {isExpanded && expandedItems === "Pages" && (
+            <ul>
+              <h4>Login screens</h4>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
+              <li>
+                <Link to="/forgot">Forgot Password</Link>
+              </li>
+              <li>
+                <Link to="/404">404 Page</Link>
+              </li>
+              <li>
+                <Link to="/blank">Blank Page</Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <Link to="/Charts">

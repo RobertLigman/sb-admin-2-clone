@@ -1,5 +1,5 @@
 .side-nav {
-    position: absolute;
+    /* position: absolute; */
     position: fixed;
     top: 0;
     left: 0;
@@ -54,6 +54,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        position: fixed;
         color: #fff;
     }
     .side-nav__list {
