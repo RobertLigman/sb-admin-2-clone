@@ -1,0 +1,33 @@
+.not-found {
+    grid-row: 2/3;
+    grid-column: 2/-1;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.not-found__page-title {
+    font-size: 4.5rem;
+}
+
+.not-found__page-subtitle {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.not-found__text {
+    color: #aaa;
+}
+
+.not-found__link {
+    color: #4e73df;
+    text-decoration: none;
+    outline: transparent;
+}
+
+.second-section {
+    margin-top: 50px;
+    text-align: center;
+}
