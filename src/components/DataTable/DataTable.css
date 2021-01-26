@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td,
+thead {
+    border: 1px solid lightblue;
+    padding: 30px;
+}
+
+tbody:nth-child(even) {
+    border: 1px solid lightblue;
+    background-color: lightblue;
+}
+
+@media (min-width: 769px) {
+    .outer {
+        /* width: 100%; */
+        grid-row: 2/3;
+        grid-column: 2/-1;
+        /* background-color: red; */
+    }
+}
