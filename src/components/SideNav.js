@@ -9,6 +9,7 @@ import {
   faChartArea,
   faTable,
   faFolder,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -120,20 +121,22 @@ const SideNav = (props) => {
         </li>
         <li>
           <Link to="/Charts">
-            {" "}
             <FontAwesomeIcon icon={faChartArea} className="side-nav__icon" />
             Charts
           </Link>
         </li>
         <li>
           <Link to="/Tables">
-            {" "}
             <FontAwesomeIcon icon={faTable} className="side-nav__icon" />
             Tables
           </Link>
         </li>
-        <div className="arrow-control upper-line" onClick={props.click}>
-          arrow
+        <div className=" arrow-control upper-line">
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className="side-nav__icon middle"
+            onClick={props.click}
+          />
         </div>
       </ul>
     </nav>
