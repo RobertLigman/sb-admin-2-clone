@@ -35,7 +35,7 @@ const MainHeader = (props) => {
     setOpenSearchBar(!openSearchBar);
   };
   return (
-    <header>
+    <header className="header">
       <ul className="header-list" style={{ marginLeft: props.setMarginLeft }}>
         <li className="header-list-item hamburger-item primary">
           <div

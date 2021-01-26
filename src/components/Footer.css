@@ -10,3 +10,10 @@ footer {
     /* grid-column: 2/3;
     grid-row: 3/4; */
 }
+
+@media (min-width: 769px) {
+    .footer {
+        grid-column: 2/-1;
+        grid-row: 3/-1;
+    }
+}

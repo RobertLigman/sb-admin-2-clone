@@ -8,7 +8,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "./GlobalSet.css";
 import DataTable from "./components/DataTable/DataTable";
-
+import NotFound from "./components/404/NotFound";
 function App() {
   const [sideNav, setSideNav] = useState(false);
   const toggleNav = () => {
@@ -23,7 +23,7 @@ function App() {
     <Router>
       <MainHeader
         click={toggleNav}
-        setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
+        // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
       />
       {sideNav && <SideNav click={closeNav} />}
 
@@ -31,11 +31,18 @@ function App() {
         <Route path="/Tables" exact>
           <DataTable />
         </Route>
+        <Route path="/404" exact>
+          <NotFound />
+        </Route>
         <Route path="/">
-          <Main setMarginLeft={sideNav ? "var(--side-nav-width)" : null} />
+          <Main
+          // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
+          />
         </Route>
       </Switch>
-      <Footer setMarginLeft={sideNav ? "var(--side-nav-width)" : null} />
+      <Footer
+      // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
+      />
     </Router>
   );
 }

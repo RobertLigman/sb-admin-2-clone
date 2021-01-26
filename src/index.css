@@ -64,4 +64,9 @@ body {
      :root {
         --side-nav-width: 220px;
     }
+    #root {
+        display: grid;
+        grid-template-columns: var(--side-nav-width) 1fr;
+        grid-template-rows: var(--header-height) 1fr var(--footer-height);
+    }
 }
