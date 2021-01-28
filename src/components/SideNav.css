@@ -53,6 +53,16 @@ button.side-nav__link {
 }
 
 @media (min-width: 576px) {
+    button.side-nav__link {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        justify-items: start;
+        gap: 10px;
+    }
+    /* .allow_rotation {
+        justify-self: flex-end;
+    } */
     .side-nav {
         /* display: none !important; */
         width: var(--side-nav-width);

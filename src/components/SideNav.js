@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./SideNav.css";
 import {
@@ -10,6 +10,7 @@ import {
   faTable,
   faFolder,
   faArrowLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -26,8 +27,24 @@ const SideNav = (props) => {
       setIsExpanded(true);
     }
     setExpandedItems(e.target.textContent);
+
     // console.log(e.target.textContent);
   };
+  useEffect(() => {
+    // console.log(
+    //   document.querySelector(".allow_rotation").parentNode.textContent ===
+    //     expandedItems
+    // );
+    if (isExpanded) {
+      [...document.querySelectorAll(".allow_rotation")].find(
+        (item) => item.parentNode.textContent === expandedItems
+      ).style.transform = "rotate(90deg)";
+    } else if (expandedItems) {
+      [...document.querySelectorAll(".allow_rotation")].find(
+        (item) => item.parentNode.textContent === expandedItems
+      ).style.transform = "rotate(0deg)";
+    }
+  }, [isExpanded, expandedItems]);
   return (
     <nav className="side-nav">
       <ul className="side-nav__list list">
@@ -52,10 +69,14 @@ const SideNav = (props) => {
           </Link>
         </li>
         <div className="nav-items__header upper-line">interface</div>
-        <li className="list__item">
+        <li className="list__item expandable">
           <button onClick={(e) => toggleExpanded(e)} className="side-nav__link">
             <FontAwesomeIcon icon={faCog} className="side-nav__icon" />
             Components
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="side-nav__icon allow_rotation"
+            />
           </button>
           {isExpanded && expandedItems === "Components" && (
             <ul className="sublist">
@@ -73,10 +94,14 @@ const SideNav = (props) => {
             </ul>
           )}
         </li>
-        <li className="list__item">
+        <li className="list__item expandable">
           <button onClick={(e) => toggleExpanded(e)} className="side-nav__link">
             <FontAwesomeIcon icon={faWrench} className="side-nav__icon" />
             Utilities
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="side-nav__icon allow_rotation"
+            />
           </button>
           {isExpanded && expandedItems === "Utilities" && (
             <ul className="sublist">
@@ -109,6 +134,10 @@ const SideNav = (props) => {
           <button onClick={(e) => toggleExpanded(e)} className="side-nav__link">
             <FontAwesomeIcon icon={faFolder} className="side-nav__icon" />
             Pages
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="side-nav__icon allow_rotation"
+            />
           </button>
           {isExpanded && expandedItems === "Pages" && (
             <ul className="sublist">
