@@ -11,21 +11,25 @@ import DataTable from "./components/DataTable/DataTable";
 import NotFound from "./components/404/NotFound";
 function App() {
   const [sideNav, setSideNav] = useState(false);
+
   const toggleNav = () => {
     // console.log(sideNav);
     setSideNav(!sideNav);
+    if (sideNav) {
+      document.querySelector("#root").style.gridTemplateColumns = "1fr";
+    } else {
+      document.querySelector("#root").style.gridTemplateColumns =
+        " var(--side-nav-width) 1fr";
+    }
   };
-  const closeNav = () => {
-    // console.log("click");
-    setSideNav(false);
-  };
+
   return (
     <Router>
       <MainHeader
         click={toggleNav}
         // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
       />
-      {sideNav && <SideNav click={closeNav} />}
+      {sideNav && <SideNav click={toggleNav} />}
 
       <Switch>
         <Route path="/Tables" exact>
