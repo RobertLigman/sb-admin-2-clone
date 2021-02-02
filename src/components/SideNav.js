@@ -148,7 +148,7 @@ const SideNav = (props) => {
                 </Link>
               </li>
               <li className="sublist__item">
-                <Link to="/register" className="side-nav__sublink">
+                <Link to="/Register" className="side-nav__sublink">
                   Register
                 </Link>
               </li>

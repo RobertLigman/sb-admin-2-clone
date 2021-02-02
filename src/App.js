@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import "./GlobalSet.css";
 import DataTable from "./components/DataTable/DataTable";
 import NotFound from "./components/404/NotFound";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -38,6 +40,12 @@ function App() {
         </Route>
         <Route path="/404" exact>
           <NotFound />
+        </Route>
+        <Route path="/Login">
+          <Login />
+        </Route>
+        <Route path="/Register">
+          <Register />
         </Route>
         <Route path="/">
           <Main
