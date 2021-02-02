@@ -27,6 +27,7 @@ function App() {
     <Router>
       <MainHeader
         click={toggleNav}
+        isSideNavOpen={sideNav}
         // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
       />
       {sideNav && <SideNav click={toggleNav} />}

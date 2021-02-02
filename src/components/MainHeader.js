@@ -37,12 +37,14 @@ const MainHeader = (props) => {
   return (
     <header className="header">
       <ul className="header-list" style={{ marginLeft: props.setMarginLeft }}>
-        <li className="header-list-item hamburger-item primary">
-          <div
-            className="hamburger-icon"
-            onClick={props.click}
-            open={isNavBarOpen}></div>
-        </li>
+        {!props.isSideNavOpen && (
+          <li className="header-list-item hamburger-item primary">
+            <div
+              className="hamburger-icon"
+              onClick={props.click}
+              open={isNavBarOpen}></div>
+          </li>
+        )}
         <li className="header-list-item search" onClick={toggleSearchBar}>
           <form onSubmit={submitHandler} className="search__form" tabIndex="1">
             {/* <input type="text" placeholder="Search for" /> */}
