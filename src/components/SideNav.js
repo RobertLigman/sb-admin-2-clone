@@ -35,6 +35,7 @@ const SideNav = (props) => {
     //   document.querySelector(".allow_rotation").parentNode.textContent ===
     //     expandedItems
     // );
+
     if (isExpanded) {
       [...document.querySelectorAll(".allow_rotation")].find(
         (item) => item.parentNode.textContent === expandedItems
@@ -49,7 +50,7 @@ const SideNav = (props) => {
     <nav className="side-nav">
       <ul className="side-nav__list list">
         <li className="list__item">
-          <Link to="/index.html" className="active side-nav__link">
+          <Link to="/index.html" className="active side-nav__link logo-link">
             <FontAwesomeIcon
               icon={faLaughWink}
               className="side-nav__icon logo"
@@ -177,7 +178,7 @@ const SideNav = (props) => {
             Charts
           </Link>
         </li>
-        <li>
+        <li className="list__item">
           <Link to="/Tables" className="side-nav__link">
             <FontAwesomeIcon icon={faTable} className="side-nav__icon" />
             Tables

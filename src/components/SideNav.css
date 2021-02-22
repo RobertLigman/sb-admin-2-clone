@@ -31,9 +31,14 @@
 }
 
 .side-nav__link {
+    padding: 0 10px;
     color: white;
     text-decoration: none;
     background-color: transparent;
+}
+
+.side-nav__link:hover {
+    opacity: 1;
 }
 
 button.side-nav__link {
@@ -43,6 +48,9 @@ button.side-nav__link {
 }
 
 .side-nav__icon.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotate(-30deg);
     font-size: 40px;
     color: white;
@@ -52,8 +60,14 @@ button.side-nav__link {
     opacity: 0.5;
 }
 
+.logo-link {
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+}
+
 @media (min-width: 576px) {
-    button.side-nav__link {
+    .side-nav__link {
         width: 100%;
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -158,5 +172,8 @@ button.side-nav__link {
     }
     .side-nav__sublink:hover {
         background-color: #eee;
+    }
+    .logo-link {
+        display: flex;
     }
 }

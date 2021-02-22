@@ -12,6 +12,7 @@ import NotFound from "./components/404/NotFound";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Blank from "./components/blank/Blank";
+import Buttons from "./components/Buttons/Buttons";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -53,6 +54,9 @@ function App() {
         </Route>
         <Route path="/Blank">
           <Blank />
+        </Route>
+        <Route path="/buttons">
+          <Buttons />
         </Route>
         <Route path="/">
           <Main
