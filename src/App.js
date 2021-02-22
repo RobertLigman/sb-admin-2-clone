@@ -11,6 +11,7 @@ import DataTable from "./components/DataTable/DataTable";
 import NotFound from "./components/404/NotFound";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
+import Blank from "./components/blank/Blank";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -32,6 +33,7 @@ function App() {
         isSideNavOpen={sideNav}
         // setMarginLeft={sideNav ? "var(--side-nav-width)" : null}
       />
+
       {sideNav && <SideNav click={toggleNav} />}
 
       <Switch>
@@ -41,11 +43,16 @@ function App() {
         <Route path="/404" exact>
           <NotFound />
         </Route>
+
         <Route path="/Login">
           <Login />
         </Route>
+
         <Route path="/Register">
           <Register />
+        </Route>
+        <Route path="/Blank">
+          <Blank />
         </Route>
         <Route path="/">
           <Main

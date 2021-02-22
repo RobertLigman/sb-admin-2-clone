@@ -120,25 +120,29 @@ const MainHeader = (props) => {
           </div>
         </li>
         <li className="header-list-item ">
-          <div className="account" onClick={toggleAccountMenu}>
-            <p> Valerie Luna </p> <div className="avatar-image"></div>
-            <ul className={`${isOpen && "active"} dropdown-menu`}>
-              <li>
-                <Link to="/profile"> Profile </Link>
-              </li>
-              <li>
-                <Link to="/profile"> Profile </Link>
-              </li>
-              <li>
-                <Link to="/profile"> Profile </Link>
-              </li>
-              <li className="last">
-                <Link to="/" onClick={handleLogout}>
-                  Logout
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <Link to="/" className="test">
+            <div className="account">
+              <p> Valerie Luna </p> <div className="avatar-image"></div>
+            </div>
+          </Link>
+          <ul className="test-dropdown">
+            <li>
+              <Link to="/profile"> Profile </Link>
+            </li>
+            <li>
+              <Link to="/profile"> Profile </Link>
+            </li>
+            <li>
+              <Link to="/profile"> Profile </Link>
+            </li>
+            <li className="last">
+              <Link to="/" onClick={handleLogout}>
+                Logout
+              </Link>
+            </li>
+          </ul>
+
+          {/* onClick={toggleAccountMenu} */}
         </li>
       </ul>
     </header>

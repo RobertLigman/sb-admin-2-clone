@@ -116,7 +116,7 @@ const Illustration = {
     "Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum cum hic veritatis voluptatem neque inventore molestiae eos at voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   image: {
     src: image,
-    alt: "cycki",
+    alt: "xx",
   },
 };
 
