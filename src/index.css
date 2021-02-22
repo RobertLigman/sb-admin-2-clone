@@ -22,10 +22,13 @@ html {
 }
 
 #root {
-    position: relative;
-    max-width: 100%;
+    /* position: relative; */
+    max-width: 100vw;
     overflow: hidden;
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--header-height) 1fr var(--footer-height);
     /* display: grid;
     grid-template-columns: side-nav-start 80px side-nav-end 1fr;
     grid-template-rows: header-start 70px header-end 1fr footer-start var( --footer-height) footer-end; */

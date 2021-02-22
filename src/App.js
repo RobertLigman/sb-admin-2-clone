@@ -20,10 +20,10 @@ function App() {
     // console.log(sideNav);
     setSideNav(!sideNav);
     if (sideNav) {
-      document.querySelector("#root").style.gridTemplateColumns = "1fr";
+      document.querySelector("#root").style.gridTemplateColumns = "0px 100vw";
     } else {
       document.querySelector("#root").style.gridTemplateColumns =
-        " var(--side-nav-width) 1fr";
+        "var(--side-nav-width) 1fr";
     }
   };
 

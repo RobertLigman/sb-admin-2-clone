@@ -2,11 +2,14 @@
     /* position: absolute; */
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 0; */
     /* bottom: 0; */
-    min-height: 100vh;
+    min-height: 100%;
     width: var(--side-nav-width);
+    grid-column: 1/2;
+    grid-row: 1/-1;
     background-color: #4d73df;
+    border: none;
     z-index: 100;
 }
 
@@ -81,7 +84,7 @@ button.side-nav__link {
         /* display: none !important; */
         width: var(--side-nav-width);
         background-color: #4e73df;
-        min-height: 100vh;
+        height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
