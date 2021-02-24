@@ -8,6 +8,7 @@ import {
   faInfo,
   faExclamationTriangle,
   faTrash,
+  faFlag,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "./Button/Button";
@@ -68,7 +69,57 @@ const Buttons = () => {
           </div>
         </Card>
       </div>
-      <Card />
+      <Card title="Split Buttons with Icon">
+        <p className="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          animi deleniti repellat, ab nam laudantium molestias hic, labore
+          consectetur dolorem libero nulla ex impedit explicabo.
+        </p>
+        <div className="split-button-container">
+          <Button classes="btn-primary btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button Primary
+          </Button>
+          <Button classes="btn-success btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button Success
+          </Button>
+          <Button classes="btn-info btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button Info
+          </Button>
+          <Button classes="btn-warning btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button Warning
+          </Button>
+          <Button classes="btn-danger btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button Danger
+          </Button>
+          <Button classes="btn-secondary btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button secondary
+          </Button>
+          <Button classes="btn-light btn-split">
+            <div>
+              <FontAwesomeIcon icon={faFlag} className="btn__icon" />
+            </div>
+            Split Button light
+          </Button>
+        </div>
+      </Card>
       {/* <ColorTile /> */}
     </div>
   );

@@ -40,7 +40,7 @@ const SideNav = (props) => {
       item.style.transform = "rotate(0deg)";
     });
     if (isExpanded) {
-      if (expandedItems != "") {
+      if (expandedItems !== "") {
         [...document.querySelectorAll(".allow_rotation")].find(
           (item) => item.parentNode.textContent === expandedItems
         ).style.transform = "rotate(90deg)";

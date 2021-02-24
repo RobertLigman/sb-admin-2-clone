@@ -30,3 +30,11 @@ p.danger {
     flex-direction: column;
     gap: 10px;
 }
+
+.split-button-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
