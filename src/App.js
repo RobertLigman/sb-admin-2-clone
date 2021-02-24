@@ -22,7 +22,7 @@ function App() {
   };
   useEffect(() => {
     if (!sideNav) {
-      document.querySelector("#root").style.gridTemplateColumns = "0px 100vw";
+      document.querySelector("#root").style.gridTemplateColumns = "0px 100%";
     } else {
       document.querySelector("#root").style.gridTemplateColumns =
         "var(--side-nav-width) 1fr";
