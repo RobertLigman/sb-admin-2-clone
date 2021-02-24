@@ -120,7 +120,7 @@ const MainHeader = (props) => {
           </div>
         </li>
         <li className="header-list-item ">
-          <Link to="/" className="test">
+          <Link to="" className="test">
             <div className="account">
               <p> Valerie Luna </p> <div className="avatar-image"></div>
             </div>

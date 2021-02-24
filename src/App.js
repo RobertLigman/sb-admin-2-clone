@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import logo from "./logo.svg";
 import "./App.css";
@@ -19,14 +19,15 @@ function App() {
   const toggleNav = () => {
     // console.log(sideNav);
     setSideNav(!sideNav);
-    if (sideNav) {
+  };
+  useEffect(() => {
+    if (!sideNav) {
       document.querySelector("#root").style.gridTemplateColumns = "0px 100vw";
     } else {
       document.querySelector("#root").style.gridTemplateColumns =
         "var(--side-nav-width) 1fr";
     }
-  };
-
+  }, [sideNav]);
   return (
     <Router>
       <MainHeader
