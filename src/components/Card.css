@@ -16,18 +16,18 @@
     align-items: center;
 }
 
+.Card__body {
+    padding: 20px;
+}
+
 .Card-header__title {
     font-weight: 600;
 }
 
-.Card__text {
-    padding: 20px 15px;
-}
 
-.Card__text p {
-    font-size: 1rem;
-    color: rgba(114, 113, 113, 0.7);
-}
+/* .Card__text {
+    padding: 20px 15px;
+} */
 
 .dots-container {
     height: 100%;

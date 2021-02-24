@@ -1,6 +1,32 @@
 .Buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-gap: 20px;
     margin: 20px;
+}
+
+.Buttons .Card {
+    margin: 0;
+}
+
+.text-container {
+    /* padding: 20px; */
+}
+
+.Buttons__title {
+    grid-column: 1/-1;
+    color: #333;
+}
+
+p.danger {
+    padding: 10px 0;
+    color: #e74a3b;
+}
+
+.brand-buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
