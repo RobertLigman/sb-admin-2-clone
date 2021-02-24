@@ -26,6 +26,7 @@ const SideNav = (props) => {
     } else if (expandedItems !== e.target.textContent) {
       setIsExpanded(true);
     }
+
     setExpandedItems(e.target.textContent);
 
     // console.log(e.target.textContent);
@@ -35,11 +36,15 @@ const SideNav = (props) => {
     //   document.querySelector(".allow_rotation").parentNode.textContent ===
     //     expandedItems
     // );
-
+    [...document.querySelectorAll(".allow_rotation")].forEach((item) => {
+      item.style.transform = "rotate(0deg)";
+    });
     if (isExpanded) {
-      [...document.querySelectorAll(".allow_rotation")].find(
-        (item) => item.parentNode.textContent === expandedItems
-      ).style.transform = "rotate(90deg)";
+      if (expandedItems != "") {
+        [...document.querySelectorAll(".allow_rotation")].find(
+          (item) => item.parentNode.textContent === expandedItems
+        ).style.transform = "rotate(90deg)";
+      }
     } else if (expandedItems) {
       [...document.querySelectorAll(".allow_rotation")].find(
         (item) => item.parentNode.textContent === expandedItems
