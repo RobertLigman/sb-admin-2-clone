@@ -34,6 +34,7 @@ header {
 }
 
 .hamburger-icon {
+    cursor: pointer;
     box-sizing: border-box;
     width: 20px;
     height: 15px;

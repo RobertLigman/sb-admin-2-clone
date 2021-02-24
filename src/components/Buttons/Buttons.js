@@ -1,9 +1,8 @@
 import React from "react";
 import "./Buttons.css";
-import ColorTile from "../ColorTile";
+
 import Card from "../Card";
 import {
-  fabFacebookF,
   faCheck,
   faInfo,
   faExclamationTriangle,

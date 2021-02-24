@@ -10,7 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Backdrop from "./Backdrop";
 const MainHeader = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [openSearchBar, setOpenSearchBar] = useState(false);
   let isNavBarOpen = false;
   const submitHandler = (e) => {
@@ -21,10 +21,10 @@ const MainHeader = (props) => {
     // console.log("modal");
   };
 
-  const toggleAccountMenu = () => {
-    setIsOpen(!isOpen);
-    // console.log("trybi");
-  };
+  // const toggleAccountMenu = () => {
+  //   setIsOpen(!isOpen);
+  //   // console.log("trybi");
+  // };
   // const toggleNav = () => {
   //   isNavBarOpen = !isNavBarOpen;
   // };

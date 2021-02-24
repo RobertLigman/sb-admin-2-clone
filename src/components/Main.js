@@ -3,12 +3,9 @@ import {
   faCalendar,
   faComments,
   faDollarSign,
-  faArrowRight,
   faTasks,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+
 import "./Main.css";
 import Illustrations from "./Illustrations";
 import Tile from "./Tile";
