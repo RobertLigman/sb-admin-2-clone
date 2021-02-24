@@ -1,0 +1,28 @@
+.btn-circle {
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+}
+
+.btn-success {
+    background-color: #1cc88a;
+}
+
+.btn-info {
+    background-color: #36b9cc;
+}
+
+.btn-warning {
+    background-color: #f6c23e;
+}
+
+.btn-danger {
+    background-color: #e74a3b;
+}
