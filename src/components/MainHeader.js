@@ -8,6 +8,7 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import avatarImg from "../assets/iconfinder_7_avatar_2754582.png";
 import Backdrop from "./Backdrop";
 const MainHeader = (props) => {
   // const [isOpen, setIsOpen] = useState(false);
@@ -122,7 +123,20 @@ const MainHeader = (props) => {
         <li className="header-list-item ">
           <Link to="" className="test">
             <div className="account">
-              <p> Valerie Luna </p> <div className="avatar-image"></div>
+              <p> Valerie Luna </p>
+              <div className="avatar-image">
+                <img src={avatarImg} alt="avatar" />
+              </div>
+              {/* <div>
+                Icons made by{" "}
+                <a href="https://www.freepik.com" title="Freepik">
+                  Freepik
+                </a>{" "}
+                from{" "}
+                <a href="https://www.flaticon.com/" title="Flaticon">
+                  www.flaticon.com
+                </a>
+              </div> */}
             </div>
           </Link>
           <ul className="test-dropdown">

@@ -106,7 +106,13 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #555;
+    /* background-color: #555; */
+    overflow: hidden;
+}
+
+.avatar-image img {
+    width: 100%;
+    margin: 0;
 }
 
 .search {
