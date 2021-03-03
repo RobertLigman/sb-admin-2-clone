@@ -29,6 +29,11 @@
     font-weight: 600;
 }
 
+.Card-header__title--no-bold {
+    font-weight: normal;
+    color: #aaa;
+}
+
 
 /* .Card__text {
     padding: 20px 15px;

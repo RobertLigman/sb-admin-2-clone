@@ -13,6 +13,7 @@ import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Blank from "./components/blank/Blank";
 import Buttons from "./components/Buttons/Buttons";
+import Cards from "./components/Cards/Cards";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -58,6 +59,9 @@ function App() {
         </Route>
         <Route path="/buttons">
           <Buttons />
+        </Route>
+        <Route path="/Cards">
+          <Cards />
         </Route>
         <Route path="/">
           <Main
