@@ -15,6 +15,7 @@ import Blank from "./components/blank/Blank";
 import Buttons from "./components/Buttons/Buttons";
 import Cards from "./components/Cards/Cards";
 import Other from "./components/Other/Other";
+import Charts from "./components/Charts/Charts";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -66,6 +67,9 @@ function App() {
         </Route>
         <Route path="/Other">
           <Other />
+        </Route>
+        <Route path="/Charts">
+          <Charts />
         </Route>
         <Route path="/">
           <Main
