@@ -16,9 +16,14 @@ const Cards = () => {
   return (
     <div className="Cards hero">
       <h1 className="Cards__title">Cards</h1>
-      <Tile icon={faCalendar} title={"earnings (monthly)"} value={"$40,000"} />
       <Tile
-        border={"green-border"}
+        border={"border-left"}
+        icon={faCalendar}
+        title={"earnings (monthly)"}
+        value={"$40,000"}
+      />
+      <Tile
+        border={"green-border border-left"}
         color={"green"}
         icon={faDollarSign}
         title={"earnings (annual)"}
@@ -26,7 +31,7 @@ const Cards = () => {
       />
 
       <Tile
-        border={"cyan-border"}
+        border={"cyan-border  border-left"}
         color={"cyan"}
         icon={faTasks}
         title={"tasks"}
@@ -34,7 +39,7 @@ const Cards = () => {
         progressBar
       />
       <Tile
-        border={"gold-border"}
+        border={"gold-border  border-left"}
         color={"gold"}
         icon={faComments}
         title={"pending requests"}

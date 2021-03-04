@@ -124,19 +124,20 @@ const Main = (props) => {
         <h1 className="main-title">{"Dashboard"}</h1>
 
         <Tile
+          border={"border-left"}
           icon={faCalendar}
           title={"earnings (monthly)"}
           value={"$40,000"}
         />
         <Tile
-          border={"green-border"}
+          border={"green-border border-left"}
           color={"green"}
           icon={faDollarSign}
           title={"earnings (annual)"}
           value={"$215,000"}
         />
         <Tile
-          border={"cyan-border"}
+          border={"cyan-border  border-left"}
           color={"cyan"}
           icon={faTasks}
           title={"tasks"}
@@ -144,7 +145,7 @@ const Main = (props) => {
           progressBar
         />
         <Tile
-          border={"gold-border"}
+          border={"gold-border  border-left"}
           color={"gold"}
           icon={faComments}
           title={"pending requests"}

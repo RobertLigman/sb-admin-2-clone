@@ -1,0 +1,9 @@
+.Borders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto;
+    grid-gap: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+    align-items: start;
+}
