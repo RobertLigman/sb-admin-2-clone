@@ -16,6 +16,8 @@ import Buttons from "./components/Buttons/Buttons";
 import Cards from "./components/Cards/Cards";
 import Other from "./components/Other/Other";
 import Charts from "./components/Charts/Charts";
+import Colors from "./components/Colors/Colors";
+import Borders from "./components/Borders/Borders";
 function App() {
   const [sideNav, setSideNav] = useState(false);
 
@@ -70,6 +72,12 @@ function App() {
         </Route>
         <Route path="/Charts">
           <Charts />
+        </Route>
+        <Route path="/Colors">
+          <Colors />
+        </Route>
+        <Route path="/Borders">
+          <Borders />
         </Route>
         <Route path="/">
           <Main

@@ -5,3 +5,11 @@
 .primary-bgc {
     background-color: #4d73df;
 }
+
+h1 {
+    color: #555;
+}
+
+div[class*="__description"] {
+    grid-column: 1/-1;
+}
