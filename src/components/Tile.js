@@ -6,7 +6,7 @@ const Tile = (props) => {
   // console.log(props);
   return (
     <div className={`main__tile ${props.border}`}>
-      <h3 className={`tile-title ${props.color}`}>{props.title}</h3>
+      <h3 className={`tile-title ${props.titleClasses}`}>{props.title}</h3>
       <h3 className="tile-statistics">
         {props.value}
         {props.progressBar && (
@@ -14,7 +14,7 @@ const Tile = (props) => {
             <div
               style={{
                 width: `${props.value}`,
-                backgroundColor: `${props.color}`,
+                backgroundColor: `${props.titleClasses}`,
               }}></div>
           </div>
         )}

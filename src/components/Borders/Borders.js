@@ -6,7 +6,7 @@ const Borders = () => {
   return (
     <div className="Borders hero">
       <div className="Borders__description">
-        <h1 className="Borders__title">Other Utilities</h1>
+        <h1 className="Borders__title">Border Utilities</h1>
         <p className="Borders__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde
           sunt maxime animi debitis pariatur, quo, cum architecto, esse numquam
@@ -14,28 +14,92 @@ const Borders = () => {
         </p>
       </div>
       <div>
-        <Tile border={"border-left"} />
-        <Tile border={"green-border border-left"} />
+        <Tile
+          border={"border-left Borders__Tile"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"green-border border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
 
-        <Tile border={"cyan-border  border-left"} />
-        <Tile border={"gold-border  border-left"} />
-        <Tile border={"border-left"} />
-        <Tile border={"green-border border-left"} />
+        <Tile
+          border={"cyan-border  border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"gold-border  border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"green-border border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
 
-        <Tile border={"cyan-border  border-left"} />
-        <Tile border={"gold-border  border-left"} />
+        <Tile
+          border={"cyan-border  border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"gold-border  border-left"}
+          title=".border-left"
+          titleClasses="Borders__title-class"
+        />
       </div>
       <div>
-        <Tile border={"border-bottom"} />
-        <Tile border={"green-border border-bottom"} />
+        <Tile
+          border={"border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"green-border border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
 
-        <Tile border={"cyan-border  border-bottom"} />
-        <Tile border={"gold-border  border-bottom"} />
-        <Tile border={"border-bottom"} />
-        <Tile border={"green-border border-bottom"} />
+        <Tile
+          border={"cyan-border  border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"gold-border  border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"green-border border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
 
-        <Tile border={"cyan-border  border-bottom"} />
-        <Tile border={"gold-border  border-bottom"} />
+        <Tile
+          border={"cyan-border  border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
+        <Tile
+          border={"gold-border  border-bottom"}
+          title=".border-bottom"
+          titleClasses="Borders__title-class"
+        />
       </div>
     </div>
   );

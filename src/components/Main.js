@@ -131,14 +131,14 @@ const Main = (props) => {
         />
         <Tile
           border={"green-border border-left"}
-          color={"green"}
+          titleClasses={"green"}
           icon={faDollarSign}
           title={"earnings (annual)"}
           value={"$215,000"}
         />
         <Tile
           border={"cyan-border  border-left"}
-          color={"cyan"}
+          titleClasses={"cyan"}
           icon={faTasks}
           title={"tasks"}
           value={"50%"}
@@ -146,7 +146,7 @@ const Main = (props) => {
         />
         <Tile
           border={"gold-border  border-left"}
-          color={"gold"}
+          titleClasses={"gold"}
           icon={faComments}
           title={"pending requests"}
           value={"18"}
