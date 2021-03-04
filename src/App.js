@@ -19,7 +19,7 @@ import Charts from "./components/Charts/Charts";
 import Colors from "./components/Colors/Colors";
 import Borders from "./components/Borders/Borders";
 function App() {
-  const [sideNav, setSideNav] = useState(false);
+  const [sideNav, setSideNav] = useState(true);
 
   const toggleNav = () => {
     // console.log(sideNav);

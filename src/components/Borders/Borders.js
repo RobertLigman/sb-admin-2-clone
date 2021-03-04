@@ -1,7 +1,5 @@
 import React from "react";
 import "./Borders.css";
-
-import Card from "../Card";
 import Tile from "../Tile";
 
 const Borders = () => {

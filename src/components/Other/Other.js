@@ -2,7 +2,7 @@ import React from "react";
 import "./Other.css";
 
 import Card from "../Card";
-import ProjectItem from "../ProjectItem";
+
 import ProgressBar from "../ProgressBar";
 
 const Other = () => {
