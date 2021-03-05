@@ -94,3 +94,37 @@
 .bg-gray-900 {
     background-color: #000;
 }
+
+[class*="bg-gradient"] {
+    padding: 40px 20px;
+}
+
+.bg-gradient-primary {
+    background: rgb(78, 115, 223);
+    background: linear-gradient( 170deg, var(--primary) 14%, var(--primary-dark) 100%);
+}
+
+.bg-gradient-secondary {
+    background: var(--secondary);
+    background: linear-gradient( 170deg, var(--secondary) 14%, var(--secondary-dark) 100%);
+}
+
+.bg-gradient-success {
+    background: var(--success);
+    background: linear-gradient( 170deg, var(--success) 14%, var(--success-dark) 100%);
+}
+
+.bg-gradient-info {
+    background: var(--info);
+    background: linear-gradient(170deg, var(--info) 14%, var(--info-dark) 100%);
+}
+
+.bg-gradient-warning {
+    background: var(--warning);
+    background: linear-gradient( 170deg, var(--warning) 14%, var(--warning-dark) 100%);
+}
+
+.bg-gradient-danger {
+    background: var(--danger);
+    background: linear-gradient( 170deg, var(--danger) 14%, var(--danger-dark) 100%);
+}

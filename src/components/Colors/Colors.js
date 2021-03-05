@@ -32,7 +32,26 @@ const Colors = () => {
         </Card>
       </div>
 
-      <Card title="Custom Background Gradient Utilities"></Card>
+      <Card title="Custom Background Gradient Utilities">
+        <div className="bg-gradient-primary">
+          <p className="text-gray-100">.bg-gradient-primary</p>
+        </div>
+        <div className="bg-gradient-secondary">
+          <p className="text-gray-100">.bg-gradient-secondary</p>
+        </div>
+        <div className="bg-gradient-info">
+          <p className="text-gray-100">.bg-gradient-info</p>
+        </div>
+        <div className="bg-gradient-success">
+          <p className="text-gray-100">.bg-gradient-success</p>
+        </div>
+        <div className="bg-gradient-warning">
+          <p className="text-gray-100">.bg-gradient-warning</p>
+        </div>
+        <div className="bg-gradient-danger">
+          <p className="text-gray-100">.bg-gradient-danger</p>
+        </div>
+      </Card>
       <Card title="Custom Grayscale Background Utilities">
         <p className="bg-gray-100">.bg-gray-100</p>
         <p className="bg-gray-200">.bg-gray-200</p>

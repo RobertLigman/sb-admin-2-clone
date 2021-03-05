@@ -7,6 +7,17 @@
 :root {
     /* --side-bar-width: 220px; */
     --primary: #4e73df;
+    --primary-dark: #0b50a2;
+    --secondary: #858796;
+    --secondary-dark: #333339;
+    --success: #1cc88a;
+    --success-dark: #137954;
+    --info: #36b9cc;
+    --info-dark: #1a7987;
+    --warning: #f6c23e;
+    --warning-dark: #9f770f;
+    --danger: #e74a3b;
+    --danger-dark: #911307;
     --side-nav-width: 100px;
     --header-height: 70px;
     --footer-height: 80px;
