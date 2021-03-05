@@ -1,17 +1,19 @@
 .main {
     min-height: 100vh;
     /* background-color: rgb(236, 236, 236); */
-    padding: 20px 25px;
+    /* padding: 20px 25px; */
+    /* padding: 25px; */
     /* grid-row: 2/3;
     grid-column: 2/3; */
-}
-
-.main {
     grid-row: 2/3;
     grid-column: 2/-1;
+    display: grid;
+    margin: 20px;
 }
 
 .main-title {
+    margin: auto;
+    width: 80%;
     font-size: 25px;
     font-weight: 400;
     color: #5a5c69;
@@ -21,9 +23,7 @@
     .main {
         grid-row: 2/3;
         grid-column: 2/-1;
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
-        padding: 20px;
         justify-content: center;
         column-gap: 25px;
     }

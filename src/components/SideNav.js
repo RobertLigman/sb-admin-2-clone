@@ -61,7 +61,9 @@ const SideNav = (props) => {
               className="side-nav__icon logo"
             />
             <strong className="logo-text">
-              sb admin <sup>2</sup>
+              <p className="color-white">
+                sb admin <sup>2</sup>
+              </p>
             </strong>
           </Link>
         </li>

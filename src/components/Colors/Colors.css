@@ -10,7 +10,7 @@
     background-color: #444;
 }
 
-[class*="text"],
+[class*="text-"],
 [class*="gray"] {
     padding: 15px 25px;
 }

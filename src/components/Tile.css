@@ -1,7 +1,7 @@
 .main__tile {
-    width: 100%;
+    width: 80%;
     background-color: #fff;
-    margin: 25px 0;
+    margin: 25px auto;
     padding: 30px 20px;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -79,6 +79,9 @@
 }
 
 @media (min-width: 768px) {
+    .main__tile {
+        width: 100%;
+    }
     .main__tile:first-child {
         /* box-sizing: border-box; */
         /* max-width: 22%; */
