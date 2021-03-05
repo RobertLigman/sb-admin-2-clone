@@ -3,5 +3,94 @@
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 20px;
-    grid-template-rows: minmax(80px, 100px) auto;
+    grid-template-rows: 50px auto;
+}
+
+.bg-dark {
+    background-color: #444;
+}
+
+[class*="text"],
+[class*="gray"] {
+    padding: 15px 25px;
+}
+
+.text-gray-100 {
+    color: #fff;
+}
+
+.text-gray-200 {
+    color: #eee;
+}
+
+.text-gray-300 {
+    color: #ddd;
+}
+
+.text-gray-400 {
+    color: #ccc;
+}
+
+.text-gray-500 {
+    color: #aaa;
+}
+
+.text-gray-600 {
+    color: #888;
+}
+
+.text-gray-700 {
+    color: #666;
+}
+
+.text-gray-800 {
+    color: #444;
+}
+
+.text-gray-900 {
+    color: #000;
+}
+
+.text-xs {
+    font-size: 0.7rem;
+}
+
+.text-lg {
+    font-size: 1.4rem;
+}
+
+.bg-gray-100 {
+    background-color: #fff;
+}
+
+.bg-gray-200 {
+    background-color: #eee;
+}
+
+.bg-gray-300 {
+    background-color: #ddd;
+}
+
+.bg-gray-400 {
+    background-color: #ccc;
+}
+
+.bg-gray-500 {
+    background-color: #aaa;
+}
+
+.bg-gray-600 {
+    background-color: #888;
+}
+
+.bg-gray-700 {
+    background-color: #666;
+}
+
+.bg-gray-800 {
+    background-color: #444;
+}
+
+.bg-gray-900 {
+    background-color: #000;
 }

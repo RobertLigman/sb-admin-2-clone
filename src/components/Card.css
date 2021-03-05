@@ -2,7 +2,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 0.65rem;
-    margin: 20px 0;
+    margin: 20px 0 auto 0;
     box-shadow: 0px 0px 30px 0px rgba(151, 161, 201, 0.5);
 }
 

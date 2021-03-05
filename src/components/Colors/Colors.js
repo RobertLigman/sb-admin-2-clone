@@ -15,12 +15,35 @@ const Colors = () => {
         </p>
       </div>
       <div>
-        <Card title="Custom Text Color Utilities"></Card>
-        <Card title="Custom Font Size Utilities"></Card>
+        <Card title="Custom Text Color Utilities">
+          <p className="text-gray-100 bg-dark">.text-gray-100</p>
+          <p className="text-gray-200 bg-dark">text-gray-200</p>
+          <p className="text-gray-300 bg-dark">text-gray-300</p>
+          <p className="text-gray-400 bg-dark">text-gray-400</p>
+          <p className="text-gray-500 ">text-gray-500</p>
+          <p className="text-gray-600">text-gray-600</p>
+          <p className="text-gray-700 ">text-gray-700</p>
+          <p className="text-gray-800 ">text-gray-800</p>
+          <p className="text-gray-900 k">text-gray-900</p>
+        </Card>
+        <Card title="Custom Font Size Utilities">
+          <p className="text-xs">.text-xs</p>
+          <p className="text-lg">.text-lg</p>
+        </Card>
       </div>
 
       <Card title="Custom Background Gradient Utilities"></Card>
-      <Card title="Custom Grayscale Background Utilities"></Card>
+      <Card title="Custom Grayscale Background Utilities">
+        <p className="bg-gray-100">.bg-gray-100</p>
+        <p className="bg-gray-200">.bg-gray-200</p>
+        <p className="bg-gray-300">.bg-gray-300</p>
+        <p className="bg-gray-400">.bg-gray-400</p>
+        <p className="bg-gray-500 text-gray-100">.bg-gray-500</p>
+        <p className="bg-gray-600 text-gray-100">.bg-gray-600</p>
+        <p className="bg-gray-700 text-gray-100">.bg-gray-700</p>
+        <p className="bg-gray-800 text-gray-100">.bg-gray-800</p>
+        <p className="bg-gray-900 text-gray-100">.bg-gray-900</p>
+      </Card>
     </div>
   );
 };
