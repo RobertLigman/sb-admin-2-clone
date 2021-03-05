@@ -1,5 +1,5 @@
 .ColorTile {
-    width: 80%;
+    width: 100%;
     height: 80px;
     border-radius: 5px;
     color: #fff;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 768px) {
-    .ColorTile {
+    /* .ColorTile {
         width: 100%;
-    }
+    } */
 }

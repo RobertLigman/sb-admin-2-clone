@@ -1,5 +1,5 @@
 .main__tile {
-    width: 80%;
+    width: 100%;
     background-color: #fff;
     margin: 25px auto;
     padding: 30px 20px;
@@ -79,9 +79,9 @@
 }
 
 @media (min-width: 768px) {
-    .main__tile {
+    /* .main__tile {
         width: 100%;
-    }
+    } */
     .main__tile:first-child {
         /* box-sizing: border-box; */
         /* max-width: 22%; */

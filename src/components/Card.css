@@ -1,5 +1,5 @@
 .Card {
-    width: 80%;
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 0.65rem;
@@ -75,9 +75,9 @@
 }
 
 @media (min-width: 768px) {
-    .Card {
+    /* .Card {
         width: 100%;
-    }
+    } */
     .Card__body {
         padding: 20px;
     }
