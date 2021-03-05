@@ -49,9 +49,12 @@ const MainHeader = (props) => {
         <li className="header-list-item search" onClick={toggleSearchBar}>
           <form onSubmit={submitHandler} className="search__form" tabIndex="1">
             {/* <input type="text" placeholder="Search for" /> */}
-            <FontAwesomeIcon icon={faSearch} className="fontAwesome" />
+            <input type="text" id="form__input" placeholder="Search" />
+            <div className="form__submit">
+              <FontAwesomeIcon icon={faSearch} className="fontAwesome" />
+            </div>
           </form>
-          {openSearchBar && <Backdrop onClick={switchOfBackdrop} />}
+          {/* {openSearchBar && <Backdrop onClick={switchOfBackdrop} />} */}
         </li>
         <li className="header-list-item notifications">
           <Link to="/notifications" className=" test">
