@@ -1,0 +1,30 @@
+.Animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(80px, 100px) auto;
+    grid-gap: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+    align-items: start;
+}
+
+.Animation .Card {
+    margin: 0;
+}
+
+.Animation__text {
+    grid-column: 1/-1;
+}
+
+.Animation__description {
+    grid-column: 1/-1;
+}
+
+
+/* .text-container {
+     padding: 20px; }*/
+
+.Animation__title {
+    grid-column: 1/-1;
+    color: #333;
+}
