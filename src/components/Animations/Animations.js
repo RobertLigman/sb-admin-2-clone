@@ -3,11 +3,10 @@ import "./Animations.css";
 
 import Card from "../Card";
 
-import ProgressBar from "../ProgressBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
-import "./Dropdown.css";
 import { CSSTransition } from "react-transition-group";
+import Dropdown from "../Dropdown/Dropdown";
 const Animations = () => {
   const [dropdownActive, setDropDownActive] = useState(false);
   const toggleDropdown = () => {
@@ -32,26 +31,10 @@ const Animations = () => {
             <nav className="nav">
               <div className="Dropdown" onClick={toggleDropdown}>
                 <p>
-                  Dropdown
+                  Dropdown&nbsp;
                   <FontAwesomeIcon icon={faSortDown} />
                 </p>
-                <CSSTransition
-                  in={dropdownActive}
-                  classNames="toggle-opacity"
-                  unmountOnExit>
-                  <div className="Dropdown__elements">
-                    <a href="#" className="elements__link">
-                      Action
-                    </a>
-                    <a href="#" className="elements__link">
-                      Another action
-                    </a>
-                    <hr className="elements__split" />
-                    <a href="#" className="elements__link">
-                      Something else here
-                    </a>
-                  </div>
-                </CSSTransition>
+                <Dropdown dropdownActive={dropdownActive} />
               </div>
             </nav>
           </div>

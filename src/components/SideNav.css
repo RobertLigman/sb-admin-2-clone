@@ -188,6 +188,7 @@ button.side-nav__link {
         align-items: center;
     }
     .color-white {
+        letter-spacing: 1px;
         color: #fff;
     }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   faCalendar,
   faComments,
@@ -26,6 +26,7 @@ import ColorTile from "./ColorTile";
 import Card from "./Card";
 import Summary from "./Summary";
 import { data1, data, Illustration, developmentAproach } from "./DummyData";
+
 // const renderActiveShape = (props) => {
 //   const RADIAN = Math.PI / 180;
 //   const {
