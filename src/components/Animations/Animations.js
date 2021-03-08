@@ -7,6 +7,7 @@ import ProgressBar from "../ProgressBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import "./Dropdown.css";
+import { CSSTransition } from "react-transition-group";
 const Animations = () => {
   const [dropdownActive, setDropDownActive] = useState(false);
   const toggleDropdown = () => {
@@ -26,20 +27,22 @@ const Animations = () => {
       <div className="Card-container">
         <Card title="Grow In Animation Utilty">
           <div className="text-container">
-            <p className="text">.animated--grow-in</p>
+            <p className="text">CSS transition group</p>
             Navbar Dropdown Example:
             <nav className="nav">
               <div className="Dropdown" onClick={toggleDropdown}>
                 Dropdown
                 <FontAwesomeIcon icon={faSortDown} />
-                <div
-                  className={`Dropdown__elements ${
-                    dropdownActive ? "Dropdown__active" : ""
-                  }`}>
-                  <a href="#">el1</a>
-                  <a href="#">el3</a>
-                  <a href="#">el2</a>
-                </div>
+                <CSSTransition
+                  in={dropdownActive}
+                  classNames="toggle-opacity"
+                  unmountOnExit>
+                  <div className="Dropdown__elements">
+                    <a href="#">el1</a>
+                    <a href="#">el3</a>
+                    <a href="#">el2</a>
+                  </div>
+                </CSSTransition>
               </div>
             </nav>
           </div>
