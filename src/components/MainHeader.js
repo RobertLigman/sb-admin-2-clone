@@ -49,7 +49,7 @@ const MainHeader = (props) => {
         <li className="header-list-item search" onClick={toggleSearchBar}>
           <form onSubmit={submitHandler} className="search__form" tabIndex="1">
             {/* <input type="text" placeholder="Search for" /> */}
-            <input type="text" id="form__input" placeholder="Search" />
+            <input type="text" id="form__input" placeholder="Search for ..." />
             <div className="form__submit">
               <FontAwesomeIcon icon={faSearch} className="fontAwesome" />
             </div>

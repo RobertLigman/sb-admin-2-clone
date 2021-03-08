@@ -31,16 +31,25 @@ const Animations = () => {
             Navbar Dropdown Example:
             <nav className="nav">
               <div className="Dropdown" onClick={toggleDropdown}>
-                Dropdown
-                <FontAwesomeIcon icon={faSortDown} />
+                <p>
+                  Dropdown
+                  <FontAwesomeIcon icon={faSortDown} />
+                </p>
                 <CSSTransition
                   in={dropdownActive}
                   classNames="toggle-opacity"
                   unmountOnExit>
                   <div className="Dropdown__elements">
-                    <a href="#">el1</a>
-                    <a href="#">el3</a>
-                    <a href="#">el2</a>
+                    <a href="#" className="elements__link">
+                      Action
+                    </a>
+                    <a href="#" className="elements__link">
+                      Another action
+                    </a>
+                    <hr className="elements__split" />
+                    <a href="#" className="elements__link">
+                      Something else here
+                    </a>
                   </div>
                 </CSSTransition>
               </div>
