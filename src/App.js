@@ -18,6 +18,7 @@ import Other from "./components/Other/Other";
 import Charts from "./components/Charts/Charts";
 import Colors from "./components/Colors/Colors";
 import Borders from "./components/Borders/Borders";
+import Animations from "./components/Animations/Animations";
 function App() {
   const [sideNav, setSideNav] = useState(true);
 
@@ -78,6 +79,9 @@ function App() {
         </Route>
         <Route path="/Borders">
           <Borders />
+        </Route>
+        <Route path="/Animations">
+          <Animations />
         </Route>
         <Route path="/">
           <Main
