@@ -32,7 +32,7 @@ const Cards = () => {
 
       <Tile
         border={"cyan-border  border-left"}
-        color={"cyan"}
+        titleClasses={"cyan"}
         icon={faTasks}
         title={"tasks"}
         value={"50%"}
