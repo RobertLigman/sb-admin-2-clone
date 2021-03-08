@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+## sb-admin-2-clone
+
+This project is built using react framework. This project is based on
+https://startbootstrap.com/previews/sb-admin-2 . To check this app download project,
+open command prompt, type 'npm install', and then type 'npm start'.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
