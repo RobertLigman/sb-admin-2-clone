@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Animations.css";
 
 import Card from "../Card";
 
 import ProgressBar from "../ProgressBar";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
+import "./Dropdown.css";
 const Animations = () => {
+  const [dropdownActive, setDropDownActive] = useState(false);
+  const toggleDropdown = () => {
+    setDropDownActive((prevState) => !prevState);
+  };
   return (
     <div className="Animation hero">
       <div className="Animation__description">
@@ -20,10 +26,22 @@ const Animations = () => {
       <div className="Card-container">
         <Card title="Grow In Animation Utilty">
           <div className="text-container">
-            <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Possimus, eum.
-            </p>
+            <p className="text">.animated--grow-in</p>
+            Navbar Dropdown Example:
+            <nav className="nav">
+              <div className="Dropdown" onClick={toggleDropdown}>
+                Dropdown
+                <FontAwesomeIcon icon={faSortDown} />
+                <div
+                  className={`Dropdown__elements ${
+                    dropdownActive ? "Dropdown__active" : ""
+                  }`}>
+                  <a href="#">el1</a>
+                  <a href="#">el3</a>
+                  <a href="#">el2</a>
+                </div>
+              </div>
+            </nav>
           </div>
         </Card>
       </div>
