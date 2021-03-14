@@ -57,11 +57,11 @@ const MainHeader = (props) => {
           {/* {openSearchBar && <Backdrop onClick={switchOfBackdrop} />} */}
         </li>
         <li className="header-list-item notifications">
-          <Link to="/notifications" className=" test">
+          <button className="test">
             {" "}
             <FontAwesomeIcon icon={faBell} className="fontAwesome" />{" "}
             <div className="number">2</div>
-          </Link>
+          </button>
           <div className="test-dropdown dropdown-big">
             <h3 className="dropdown-header">Alerts Center</h3>
             <ul className="alert-list">
@@ -108,10 +108,10 @@ const MainHeader = (props) => {
         </li>
 
         <li className="header-list-item notifications">
-          <Link to="/messages" className="test">
+          <button className="test">
             <FontAwesomeIcon icon={faEnvelope} className="fontAwesome" />
             <div className="number">2</div>
-          </Link>
+          </button>
           <div className="test-dropdown dropdown-big">
             <h3 className="dropdown-header">Lalala</h3>
             <ul className="alert-list">
@@ -124,7 +124,7 @@ const MainHeader = (props) => {
           </div>
         </li>
         <li className="header-list-item ">
-          <Link to="" className="test">
+          <button className="test">
             <div className="account">
               <p> Valerie Luna </p>
               <div className="avatar-image">
@@ -141,8 +141,8 @@ const MainHeader = (props) => {
                 </a>
               </div> */}
             </div>
-          </Link>
-          <ul className="test-dropdown">
+          </button>
+          {/* <ul className="test-dropdown">
             <li>
               <Link to="/profile"> Profile </Link>
             </li>
@@ -157,7 +157,7 @@ const MainHeader = (props) => {
                 Logout
               </Link>
             </li>
-          </ul>
+          </ul> */}
 
           {/* onClick={toggleAccountMenu} */}
         </li>

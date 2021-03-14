@@ -1,9 +1,8 @@
 .Colors {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 20px;
-    grid-template-rows: 50px auto;
 }
 
 .bg-dark {
@@ -127,4 +126,11 @@
 .bg-gradient-danger {
     background: var(--danger);
     background: linear-gradient( 170deg, var(--danger) 14%, var(--danger-dark) 100%);
+}
+
+@media (min-width: 768px) {
+    .Colors {
+        grid-template-rows: 50px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

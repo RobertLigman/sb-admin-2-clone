@@ -1,7 +1,5 @@
 .Other {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(80px, 100px) auto;
     grid-gap: 20px;
     margin: 20px;
     margin-bottom: 0;
@@ -72,4 +70,11 @@
 
 .n {
     transform: rotate(-15deg);
+}
+
+@media (min-width: 768px) {
+    .Other {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(80px, 100px) auto;
+    }
 }

@@ -164,6 +164,14 @@ header {
     display: flex;
 } */
 
+.test {
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+}
+
 .test-dropdown {
     border-radius: 5px;
     opacity: 0;
